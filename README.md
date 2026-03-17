@@ -55,6 +55,11 @@ The system is built on a robust SQL schema. Key optimizations include:
    ```bash
    git clone https://github.com/yourusername/FlexiDesk.git
 
-
+# 6. Definition of Done
+- **Code follows Clean Architecture principles.**
+- **Unit and Integration tests are passing.**
+- **Database Migrations are updated.**
+- **Documentation is updated.**
+  
 
    
