@@ -54,3 +54,31 @@ The system is built on a robust SQL schema. Key optimizations include:
 1. Clone the repo:
    ```bash
    git clone https://github.com/yourusername/FlexiDesk.git
+
+
+
+
+   classDiagram
+    direction LR
+    class Resource {
+        +int Id
+        +string Name
+        +ResourceType Type
+        +decimal PricePerHour
+        +List~Reservation~ Reservations
+    }
+    class Reservation {
+        +int Id
+        +int ResourceId
+        +string UserId
+        +DateTime StartTime
+        +DateTime EndTime
+        +bool IsValid()
+    }
+    class User {
+        +int Id
+        +string Email
+        +string FullName
+    }
+    Resource "1" -- "*" Reservation : contains
+    User "1" -- "*" Reservation : makes
