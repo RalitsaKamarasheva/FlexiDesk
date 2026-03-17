@@ -15,3 +15,5 @@ The following requirements guide the development of the **FlexiDesk** system, en
 * **No Overlapping:** A resource (desk/room) cannot be booked by two different users for the same time interval.
 * **Future Dating:** Reservations can only be made for future dates and times.
 * **Resource Status:** Disabled or "Out of Order" resources are automatically excluded from the search results.
+
+
