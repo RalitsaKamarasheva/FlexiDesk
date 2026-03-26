@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{95CDDFDF-8A0F-4AB1-A45C-2F801CD0253D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexiDesk.Web", "FlexiDesk.Web\FlexiDesk.Web.csproj", "{AB86D619-F15E-9698-A6F1-6938A32CA87F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexiDesk.Domain", "FlexiDesk.Domain\FlexiDesk.Domain.csproj", "{78361003-CC81-CEB0-2697-ACA1FB5433EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexiDesk.Infrastructure", "FlexiDesk.Infrastructure\FlexiDesk.Infrastructure.csproj", "{8ED186BC-5B08-478B-B5A7-7D10B78AE1DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexiDesk.API", "FlexiDesk.API\FlexiDesk.API.csproj", "{42253847-9654-4383-866A-E10FAB1C394A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB86D619-F15E-9698-A6F1-6938A32CA87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB86D619-F15E-9698-A6F1-6938A32CA87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB86D619-F15E-9698-A6F1-6938A32CA87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB86D619-F15E-9698-A6F1-6938A32CA87F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78361003-CC81-CEB0-2697-ACA1FB5433EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78361003-CC81-CEB0-2697-ACA1FB5433EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78361003-CC81-CEB0-2697-ACA1FB5433EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78361003-CC81-CEB0-2697-ACA1FB5433EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED186BC-5B08-478B-B5A7-7D10B78AE1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED186BC-5B08-478B-B5A7-7D10B78AE1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED186BC-5B08-478B-B5A7-7D10B78AE1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED186BC-5B08-478B-B5A7-7D10B78AE1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42253847-9654-4383-866A-E10FAB1C394A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42253847-9654-4383-866A-E10FAB1C394A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42253847-9654-4383-866A-E10FAB1C394A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42253847-9654-4383-866A-E10FAB1C394A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB86D619-F15E-9698-A6F1-6938A32CA87F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{78361003-CC81-CEB0-2697-ACA1FB5433EF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8ED186BC-5B08-478B-B5A7-7D10B78AE1DA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{42253847-9654-4383-866A-E10FAB1C394A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D58E549-86F9-45D4-96A6-DF34D8FDBCC6}
+	EndGlobalSection
+EndGlobal

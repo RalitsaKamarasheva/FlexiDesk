@@ -1,0 +1,12 @@
+D:\Github\FlexiDesk\FlexiDesk.Domain\bin\Debug\net9.0\FlexiDesk.Domain.deps.json
+D:\Github\FlexiDesk\FlexiDesk.Domain\bin\Debug\net9.0\FlexiDesk.Domain.dll
+D:\Github\FlexiDesk\FlexiDesk.Domain\bin\Debug\net9.0\FlexiDesk.Domain.pdb
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.AssemblyInfoInputs.cache
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.AssemblyInfo.cs
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.csproj.CoreCompileInputs.cache
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.sourcelink.json
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.dll
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\refint\FlexiDesk.Domain.dll
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.pdb
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\ref\FlexiDesk.Domain.dll
