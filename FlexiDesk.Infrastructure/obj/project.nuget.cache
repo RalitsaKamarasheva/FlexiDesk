@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "my645429GDI=",
+  "dgSpecHash": "grW/OJEMTFk=",
   "success": true,
   "projectFilePath": "D:\\Github\\FlexiDesk\\FlexiDesk.Infrastructure\\FlexiDesk.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rkamarasheva\\.nuget\\packages\\dapper\\2.1.72\\dapper.2.1.72.nupkg.sha512",
     "C:\\Users\\rkamarasheva\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
+    "C:\\Users\\rkamarasheva\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
+    "C:\\Users\\rkamarasheva\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\rkamarasheva\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\rkamarasheva\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\rkamarasheva\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.13\\microsoft.bcl.cryptography.9.0.13.nupkg.sha512",

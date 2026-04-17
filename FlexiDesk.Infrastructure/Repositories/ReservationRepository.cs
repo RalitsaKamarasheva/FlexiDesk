@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace FlexiDesk.Infrastructure.Repositories
 {
-    public class ReservationRepository(FlexiDeskContext context) : EFRepository<Reservation>(context), IReservationRepository
+    public class ReservationRepository(FlexiDeskContext context) : EFRepository<Reservation>(context),IReservationRepository
     {
         private readonly FlexiDeskContext _context=context;
         public async Task<bool> IsResourceBookedAsync(Guid resourceId, DateTime startDate, DateTime endDate, CancellationToken ct = default)
@@ -18,6 +18,13 @@ namespace FlexiDesk.Infrastructure.Repositories
             return await _context.Reservations.AnyAsync(r =>
             r.ResourceId == resourceId &&
             r.StartTime < endDate && r.EndTime > startDate, ct);
+        }
+
+        public async Task<Reservation?> GetByIdWithResourceAsync(Guid id, CancellationToken ct = default)
+        {
+            return await _context.Reservations
+                .Include(r => r.Resource) // Това казва на SQL: "Направи JOIN с таблица Resources"
+                .FirstOrDefaultAsync(r => r.Id == id, ct);
         }
     }
 }

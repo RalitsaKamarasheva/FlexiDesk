@@ -9,7 +9,7 @@ namespace FlexiDesk.Domain.Interfaces
 {
     public interface IReservationService
     {
-        public Task<bool> BookResourceAsync(Reservation reservation, CancellationToken ct = default);
+        public Task<Reservation> BookReservationAsync(Reservation reservation, CancellationToken ct = default);
         public Task<Reservation?> GetReservationByIdAsync(Guid id, CancellationToken ct=default);
     }
 }

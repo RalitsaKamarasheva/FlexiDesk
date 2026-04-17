@@ -1,5 +1,9 @@
-﻿using FlexiDesk.Domain.Entities;
+﻿using AutoMapper;
+using FlexiDesk.API.Models;
+using FlexiDesk.Domain.Entities;
 using FlexiDesk.Domain.Interfaces;
+using FlexiDesk.Infrastructure.Repositories;
+using FlexiDesk.Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FlexiDesk.API.Controllers
@@ -9,30 +13,35 @@ namespace FlexiDesk.API.Controllers
     public class ReservationController : ControllerBase
     {
         private readonly IReservationService _service;
+        private readonly IMapper _mapper;
 
-        public ReservationController(IReservationService service)
+        public ReservationController(IReservationService service, IMapper mapper)
         {
             _service = service;
+            _mapper = mapper;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Reservation reservation, CancellationToken ct)
+        public async Task<IActionResult> Create(CreateReservationRequest request, CancellationToken ct)
         {
-            // 1. Първо ползваме твоята Senior проверка в модела
-            if (!reservation.IsValid())
+            var reservation = _mapper.Map<Reservation>(request);
+
+            // 1. Записваме в базата
+            var createdReservation = await _service.BookReservationAsync(reservation);
+
+            if (createdReservation == null)
             {
-                return BadRequest("Invalid reservation times. Start must be in the future and before End time.");
+                return BadRequest("Resource is already booked.");
             }
 
-            // 2. Викаме сервиза, който ще провери дали ресурсът е свободен (Бизнес логика)
-            var success = await _service.BookResourceAsync(reservation, ct);
+            // 2. ВАЖНО: Презареждаме обекта с неговия Resource от базата
+            // Така AutoMapper ще види reservation.Resource.Name
+            var fullReservation = await _service.GetReservationByIdAsync(createdReservation.Id);
 
-            if (!success)
-            {
-                return Conflict("The resource is already booked for this time period.");
-            }
+            // 3. Мапваме към Response
+            var response = _mapper.Map<ReservationResponse>(fullReservation);
 
-            return Ok(new { Message = "Reservation created successfully!", ReservationId = reservation.Id });
+            return Ok(response);
         }
 
         [HttpGet("{id}")]

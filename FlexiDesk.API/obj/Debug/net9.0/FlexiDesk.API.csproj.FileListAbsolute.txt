@@ -165,7 +165,6 @@ D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\staticwebassets.build.json
 D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\staticwebassets.development.json
 D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\FlexiDes.45A37D77.Up2Date
 D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\FlexiDesk.API.dll
 D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\refint\FlexiDesk.API.dll
@@ -181,3 +180,8 @@ D:\Github\FlexiDesk\FlexiDesk.API\bin\Debug\net9.0\runtimes\win-x64\native\sni.d
 D:\Github\FlexiDesk\FlexiDesk.API\bin\Debug\net9.0\runtimes\win-x86\native\sni.dll
 D:\Github\FlexiDesk\FlexiDesk.API\bin\Debug\net9.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Github\FlexiDesk\FlexiDesk.API\bin\Debug\net9.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Github\FlexiDesk\FlexiDesk.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+D:\Github\FlexiDesk\FlexiDesk.API\bin\Debug\net9.0\FluentValidation.dll
+D:\Github\FlexiDesk\FlexiDesk.API\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Github\FlexiDesk\FlexiDesk.API\bin\Debug\net9.0\AutoMapper.dll
+D:\Github\FlexiDesk\FlexiDesk.API\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

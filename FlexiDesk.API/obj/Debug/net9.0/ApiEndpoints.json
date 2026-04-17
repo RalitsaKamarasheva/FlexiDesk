@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "reservation",
-        "Type": "FlexiDesk.Domain.Entities.Reservation",
+        "Name": "request",
+        "Type": "FlexiDesk.API.Models.CreateReservationRequest",
         "IsRequired": true
       }
     ],

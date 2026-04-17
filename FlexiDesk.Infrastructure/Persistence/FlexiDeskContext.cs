@@ -9,6 +9,7 @@ namespace FlexiDesk.Infrastructure.Persistence
         // Твоите таблици
         public DbSet<Resource> Resources { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<AuditLog> AuditLogs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -34,6 +35,15 @@ namespace FlexiDesk.Infrastructure.Persistence
                 // Индексът вече ползва Guid за ResourceId
                 entity.HasIndex(e => new { e.ResourceId, e.StartTime, e.EndTime })
                       .HasDatabaseName("IX_Reservation_ConflictCheck");
+            });
+
+            // Конфигурация за AuditLog
+            modelBuilder.Entity<AuditLog>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Id).HasDefaultValueSql("NEWSEQUENTIALID()"); // Автоматичен GUID в SQL
+                entity.Property(e => e.EntityName).IsRequired();
+                entity.Property(e => e.EntityId).IsRequired();
             });
 
             // Временно Seed-ване (използваме фиксирани GUID за теста)

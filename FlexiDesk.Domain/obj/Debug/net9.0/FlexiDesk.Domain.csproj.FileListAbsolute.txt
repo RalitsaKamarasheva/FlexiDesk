@@ -10,3 +10,4 @@ D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.dll
 D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\refint\FlexiDesk.Domain.dll
 D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.pdb
 D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\ref\FlexiDesk.Domain.dll
+D:\Github\FlexiDesk\FlexiDesk.Domain\obj\Debug\net9.0\FlexiDesk.Domain.csproj.AssemblyReference.cache

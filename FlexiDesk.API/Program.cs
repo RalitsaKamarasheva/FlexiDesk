@@ -1,10 +1,16 @@
+using FlexiDesk.API.Mappers;
+using FlexiDesk.Domain.Entities;
 using FlexiDesk.Domain.Interfaces;
+using FlexiDesk.Domain.Validators;
 using FlexiDesk.Infrastructure.Factories;
+using FlexiDesk.Infrastructure.Handlers;
 using FlexiDesk.Infrastructure.Persistence;
 using FlexiDesk.Infrastructure.Repositories;
 using FlexiDesk.Infrastructure.Services;
+using FluentValidation;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,6 +36,9 @@ builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IResourceService, ResourceService>();
 builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
 builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<IDomainEventHandler<Reservation>, AuditLogHandler>();
+builder.Services.AddValidatorsFromAssemblyContaining<ReservationValidator>();
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 

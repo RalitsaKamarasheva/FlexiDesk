@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlexiDesk.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bd4a3dea92b47b33e7ee158a17533dbda7550e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+548362d0b01e2963923896a407eaf3bc3e2608f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlexiDesk.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlexiDesk.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

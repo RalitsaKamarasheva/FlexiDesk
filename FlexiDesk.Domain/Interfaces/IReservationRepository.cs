@@ -9,6 +9,7 @@ namespace FlexiDesk.Domain.Interfaces
 {
     public interface IReservationRepository:IRepository<Reservation>
     {
-        Task<bool> IsResourceBookedAsync(Guid resourceId,DateTime startDate,DateTime endDate, CancellationToken ct=default);
+       public Task<bool> IsResourceBookedAsync(Guid resourceId,DateTime startDate,DateTime endDate, CancellationToken ct=default);
+       public Task<Reservation?> GetByIdWithResourceAsync(Guid id, CancellationToken ct = default);
     }
 }
